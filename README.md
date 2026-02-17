@@ -7,7 +7,7 @@ The UI closely follows the structure and visual hierarchy of the real Spotify pl
 
 ## 🔗 Live Demo
 
-https://your-vercel-link.vercel.app
+https://spotify-playlist-clone-ten.vercel.app/
 
 ---
 
