@@ -363,3 +363,43 @@ body {
     display: none;
   }
 }
+/* ================================
+   MOBILE FIX – DO NOT CHANGE ABOVE
+================================ */
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  .track-list {
+    overflow-x: auto;
+  }
+
+  .track-table {
+    min-width: 100%;
+  }
+
+  /* Hide album column on mobile */
+  .track-table thead th:nth-child(3),
+  .track-table tbody td:nth-child(3) {
+    display: none;
+  }
+
+  /* Reduce padding so it fits */
+  .track-table td,
+  .track-table thead th {
+    padding: 10px 6px;
+  }
+
+  /* Smaller track image */
+  .track-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Reduce title font slightly */
+  .track-title {
+    font-size: 14px;
+  }
+
+  .track-artist {
+    font-size: 12px;
+  }
+}
