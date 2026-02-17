@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/layout.js", "app/components/TrackRow.js", "app/components/TrackList.js", "app/components/PlaylistHeader.js", "app/components/LoadingState.js", "app/components/EmptyState.js", "app/page.js"  ],
   "exclude": ["node_modules"]
 }

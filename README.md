@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Spotify Playlist UI – Next.js
 
-## Getting Started
+A responsive Spotify-like playlist page built using **Next.js (App Router)** and **static JSON data**.  
+The UI closely follows the structure and visual hierarchy of the real Spotify playlist screen while focusing on clean layout, responsiveness, and user experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://your-vercel-link.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 GitHub Repository
 
-## Learn More
+https://github.com/your-username/spotify-playlist-ui
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Playlist header with:
+  - Cover image
+  - Playlist title
+  - Description
+  - Total track count
+- Track list displaying:
+  - Track name
+  - Artist
+  - Album
+  - Duration
+- Hover and selected track states
+- Sticky top navigation bar (transparent → solid on scroll)
+- Fixed bottom navigation (visible on mobile, tablet, and desktop)
+- Loading state
+- Empty state handling
+- Smooth spacing and clean visual hierarchy
+- Fully responsive across all screen sizes
+- Static JSON data (no APIs, backend, or authentication)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 Component Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `Header` – Top navigation with active state and scroll behavior  
+- `BottomNav` – Fixed bottom navigation bar  
+- `PlaylistHeader` – Playlist image, title, description, actions  
+- `TrackList` – Renders all tracks  
+- `TrackRow` – Individual track with hover & selected states  
+
+---
+
+## 🧠 Tech Stack
+
+- Next.js (App Router)
+- React
+- CSS (custom responsive styling)
+- Static JSON data
+
+---
+
+## ▶️ Run Locally
+
+npm install  
+npm run dev  
+
+Open: http://localhost:3000
+
+
+## 🌐 Deployment
+
+The project is deployed using **Vercel** for fast and reliable hosting.
+
+
