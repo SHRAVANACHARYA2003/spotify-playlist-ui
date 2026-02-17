@@ -53,11 +53,17 @@ body {
   margin-bottom: 16px;
 }
 
-.playlist-desc,
+.playlist-desc {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 10px;   /* 👈 adds space below description */
+}
+
 .playlist-count {
   color: #b3b3b3;
   font-size: 14px;
 }
+
 
 /* ================================
    Actions
