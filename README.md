@@ -7,13 +7,13 @@ The UI closely follows the structure and visual hierarchy of the real Spotify pl
 
 ## 🔗 Live Demo
 
-https://spotify-playlist-clone-ten.vercel.app/
+https://spotify-playlist-clone-ui.vercel.app/
 
 ---
 
 ## 🔗 GitHub Repository
 
-https://github.com/your-username/spotify-playlist-ui
+https://github.com/SHRAVANACHARYA2003/spotify-playlist-ui.git
 
 ---
 
