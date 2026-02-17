@@ -364,42 +364,71 @@ body {
   }
 }
 /* ================================
-   MOBILE FIX – DO NOT CHANGE ABOVE
+   MOBILE – VERTICAL TRACK LAYOUT
 ================================ */
-@media (max-width: 768px) {
-  /* Prevent horizontal scroll */
-  .track-list {
-    overflow-x: auto;
-  }
-
-  .track-table {
-    min-width: 100%;
-  }
-
-  /* Hide album column on mobile */
-  .track-table thead th:nth-child(3),
-  .track-table tbody td:nth-child(3) {
+@media (max-width: 640px) {
+  /* Hide table header */
+  .track-table thead {
     display: none;
   }
 
-  /* Reduce padding so it fits */
-  .track-table td,
-  .track-table thead th {
-    padding: 10px 6px;
+  /* Make table behave like list */
+  .track-table,
+  .track-table tbody,
+  .track-table tr,
+  .track-table td {
+    display: block;
+    width: 100%;
   }
 
-  /* Smaller track image */
+  /* Each track row */
+  .track-table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #181818;
+  }
+
+  /* Hide album + track number */
+  .track-number,
+  .track-album {
+    display: none;
+  }
+
+  /* Title cell becomes left section */
+  .track-title-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+  }
+
   .track-img {
     width: 44px;
     height: 44px;
   }
 
-  /* Reduce title font slightly */
+  .track-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .track-title {
     font-size: 14px;
   }
 
   .track-artist {
     font-size: 12px;
+    color: #b3b3b3;
+  }
+
+  /* Duration on right */
+  .track-duration {
+    display: block;
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-left: 12px;
+    white-space: nowrap;
   }
 }
