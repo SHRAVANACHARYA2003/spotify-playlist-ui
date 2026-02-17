@@ -218,17 +218,16 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background: rgba(18, 18, 18, 0.85); /* Always solid */
-  backdrop-filter: blur(10px);       /* Apply once */
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  transition: box-shadow 0.25s ease; /* REMOVE background transition */
+  transition: box-shadow 0.25s ease;
 }
 
 .topbar.scrolled {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
-
 
 .topbar-left {
   display: flex;
@@ -363,23 +362,27 @@ body {
     display: none;
   }
 }
+
 /* ================================
    MOBILE – CLEAN SPOTIFY STYLE
 ================================ */
 @media (max-width: 640px) {
+  /* Make header space correct */
+  .page {
+    padding-top: 72px;
+  }
+
   /* Hide table header */
   .track-table thead {
     display: none;
   }
 
-  /* Remove table layout */
   .track-table,
   .track-table tbody {
     display: block;
     width: 100%;
   }
 
-  /* Each row becomes flex */
   .track-table tbody tr {
     display: flex;
     align-items: center;
@@ -388,13 +391,11 @@ body {
     border-bottom: 1px solid #181818;
   }
 
-  /* Hide track number + album */
   .track-number,
   .track-album {
     display: none;
   }
 
-  /* Title cell becomes main left section */
   .track-title-cell {
     display: flex;
     align-items: center;
@@ -430,17 +431,15 @@ body {
     text-overflow: ellipsis;
   }
 
-  /* Duration on right */
   .track-duration {
     font-size: 12px;
     color: #b3b3b3;
     flex-shrink: 0;
+    margin-right: 6px; /* duration slightly inside */
   }
 
-  /* Remove table cell display */
   .track-table td {
     border: none;
     padding: 0;
   }
 }
-
